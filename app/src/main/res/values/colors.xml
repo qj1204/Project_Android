@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mainBackground">#185BAC</color>
+    <color name="blue">#0598F8</color>
+    <color name="soft_blue">#29b7cb</color>
+    <color name="button_blue">#78cbe8</color>
+    <color name="gray">#EAE7E7</color>
+    <color name="cancel_red">#de1c31</color>
+    <color name="cancel_blue">#2486b9</color>
+    <color name="selected">#DCB86C</color>
+    <color name="green">#00FF00</color>
+    <color name="green_background">#28B5B1</color>
+
+    <color name="common_primary_color">@color/white</color>
+    <color name="common_primary_dark_color">@color/black</color>
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="common_window_background_color">#F4F4F4</color>
+    <color name="common_text_color">#333333</color>
+    <color name="common_text_hint_color">#FF757575</color>
+    <color name="resend_color">#BFBDBD</color>
+    <color name="resend_ok_color">#AA5A8DDF</color>
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <color name="common_icon_color">#7C7C7C</color>
+    <color name="common_line_color">#ECECEC</color>
+
+    <!-- 对话框确认按钮的文本颜色 -->
+    <color name="common_confirm_text_color">#007AFF</color>
+    <!-- 对话框取消按钮的文本颜色 -->
+    <color name="common_cancel_text_color">#F44336</color>
+</resources>

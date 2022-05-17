@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_teacher_register"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="onClick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.login.TeacherRegisterActivity">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="姓名："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_name"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/name_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="工号："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_account"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLength="12"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/teacherNumber_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="密码："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_password"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/password_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="确认密码："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_confirm"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/confirm_password_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="性别："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/teacher_register_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="17sp" />
+
+            <RadioButton
+                android:id="@+id/teacher_register_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="女"
+                android:textSize="17sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="手机号："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_phone"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/phone_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="邮箱："
+            android:textSize="@dimen/fontSize_2"
+            android:textColor="@color/black"/>
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/teacher_register_email"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:singleLine="true"
+            android:hint="@string/email_prompt"/>
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_40" />
+
+    <Button
+        android:id="@+id/teacher_register_start"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="进行验证"
+        android:letterSpacing="0.2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fontSize_2" />
+
+</LinearLayout>

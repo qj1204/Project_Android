@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_teacher_course"
+    app:startDestination="@id/teacher_menu_attend">
+
+    <fragment
+        android:id="@+id/teacher_menu_member"
+        android:name="com.xiaoxin.project_android.fragment.teacher.TeacherCourseMemberFragment"
+        android:label="fragment_teacher_course_member"
+        tools:layout="@layout/fragment_teacher_course_member" />
+    <fragment
+        android:id="@+id/teacher_menu_attend"
+        android:name="com.xiaoxin.project_android.fragment.teacher.TeacherCourseAttendFragment"
+        android:label="fragment_teacher_course_attend"
+        tools:layout="@layout/fragment_teacher_course_attend" />
+    <fragment
+        android:id="@+id/teacher_menu_leave"
+        android:name="com.xiaoxin.project_android.fragment.teacher.TeacherCourseLeaveFragment"
+        android:label="fragment_teacher_course_leave"
+        tools:layout="@layout/fragment_teacher_course_leave" />
+    <fragment
+        android:id="@+id/teacher_menu_total"
+        android:name="com.xiaoxin.project_android.fragment.teacher.TeacherCourseTotalFragment"
+        android:label="fragment_teacher_course_total"
+        tools:layout="@layout/fragment_teacher_course_total" />
+    <fragment
+        android:id="@+id/teacher_menu_info"
+        android:name="com.xiaoxin.project_android.fragment.teacher.TeacherCourseInfoFragment"
+        android:label="fragment_course_info"
+        tools:layout="@layout/fragment_course_info" />
+</navigation>

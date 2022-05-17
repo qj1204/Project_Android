@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_confirm"
+    android:clickable="true"
+    android:focusable="true"
+    android:onClick="onClick"
+    tools:context=".activity.login.ConfirmActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_prompt"
+            android:textSize="@dimen/fontSize_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/confirm_code"
+                style="@style/EditTextStyle"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:drawableStart="@drawable/safe_ic"
+                android:drawablePadding="@dimen/dp_15"
+                android:hint="@string/confirm_code_prompt"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingHorizontal="@dimen/dp_20"
+                android:paddingVertical="@dimen/dp_18"
+                android:singleLine="true" />
+
+            <com.hjq.widget.view.CountdownView
+                android:id="@+id/confirm_resend"
+                style="@style/CountdownViewStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/confirm_confirm"
+                style="@style/ButtonStyle"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:letterSpacing="0.2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fontSize_2"/>
+        </LinearLayout>
+
+</LinearLayout>

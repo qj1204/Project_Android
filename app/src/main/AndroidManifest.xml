@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiaoxin.project_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_main"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/icon_main"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".activity.login.TeacherConfirmActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.TeacherConfirmActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.TeacherRegisterActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.TeacherRegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.SelectRoleActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.SelectRoleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.student.StudentDoRecordActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.student.StudentDoRecordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacher.MapChooseActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.teacher.MapChooseActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherRecordDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.teacher.TeacherRecordDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherLeaveActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.teacher.TeacherLeaveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacher.MemberDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.teacher.MemberDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.teacher.TeacherCourseDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.teacher.TeacherCourseDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.student.StudentRecordActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.student.StudentRecordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.student.StudentLeaveDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.student.StudentLeaveDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.student.StudentCourseConfirmActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.student.StudentCourseConfirmActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.student.StudentCourseDetailActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.student.StudentCourseDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ModifyInfoActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.ModifyInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.ModifyPasswordActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.ModifyPasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.ConfirmActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.ConfirmActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.login.StudentRegisterActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.login.StudentRegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 截图的activity -->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="com.xiaoxin.project_android.activity.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 登录界面 -->
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.xiaoxin.project_android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="L74FQkYH4smPb6GLRWaVGapXjPWCLeki" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

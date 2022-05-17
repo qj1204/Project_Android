@@ -1,0 +1,5 @@
+rootProject.name = "Project_Android"
+include ':app'
+include ':library:base'
+include ':library:widget'
+

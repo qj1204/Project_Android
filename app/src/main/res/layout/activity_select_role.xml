@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.SelectRoleActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:id="@+id/student_role"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:gravity="center"
+        android:background="@color/common_line_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/student"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_30"
+            android:text="我是学生"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_20" />
+
+    <LinearLayout
+        android:id="@+id/teacher_role"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:background="@color/common_line_color"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:src="@drawable/teacher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_35"
+            android:text="我是老师"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+</LinearLayout>
